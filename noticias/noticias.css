@@ -11,6 +11,11 @@ body {
     padding: 0px 0px 0px 0px;
 }
 
+.ico-noticias{
+    width: 20px;
+    height: 20px;
+}
+
 
 /* header */
 
@@ -149,10 +154,10 @@ ul{
     float: left;
 }
 
-.cuadritos {
+.cuadro-noticia {
     background-color: #ffffff;
     /* height: 200px; */
-    width: 95%;
+    width: 93%;
     opacity: 0.8;
     margin: 5px;
     padding: 12px;
