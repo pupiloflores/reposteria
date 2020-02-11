@@ -1,3 +1,36 @@
+.grid{
+    display: grid;
+    width: 660px;
+    grid-template-columns: 140px 1fr;
+    grid-template-rows:  30px 30px auto auto;
+    line-height: 30px;
+    text-align: left;
+    margin: 5% auto;
+    gap: 5px;
+}
+
+.grid > div{
+    border: 1px solid blue;
+    background-color: cornflowerblue;
+    margin-left: 0px;
+    padding-top: 2px;
+    padding-left: 10px;
+    line-height: 100%;
+}
+
+.grid-contenido{
+    display: grid;
+    width: 660px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    text-align: justify;
+    margin: 5% auto;
+    gap: 5px;
+}
+
+
+
+
 body {
     width: 80%;
     margin: 0 auto!important;
@@ -17,19 +50,24 @@ body {
     padding-right: 10px;
 }
 
+#article > .cuadro-noticia{
+    font-family: sans-serif;
+}
+
+
 /* header */
 
 .titulo-noticias{
     font-size: 23px;
-    color: black;
+    color: red;
     text-align: left;
     font-weight: bolder;
 }
 
 .cuerpo-noticia{
     font-size: 17px;
-    color: black;
-    text-align: justify;
+    color: blue;
+    text-align: left;
 }
 
 ul{
@@ -141,33 +179,29 @@ ul{
     width: 66%;
     opacity: 0.8;
     margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
     float: left;
-    font-family: sans-serif;
 }
 
-.contiene-titulo {
+.contiene {
     background-color: #757272;
     /* height: 620px; */
-    width: 100%;
-    height: 120px;
-    line-height: 120px;
+    width: 96%;
+    margin: 0px 0px 0px 0px;
+    padding: 10px 12px 10px 12px;
     float: left;
-    font-size: 35px;
-}
-
-.contiene-titulo>p{
-    margin: 0;
-    margin-left: 1em;
 }
 
 .cuadro-noticia {
+    background-color: #ffffff;
     /* height: 200px; */
-    width: 90%;
+    width: 93%;
     opacity: 0.8;
     margin: 5px;
+    padding: 12px;
     float: left;
     text-align: center;
-    padding: 2em;
+    border: 1px solid;
 }
 
 .txtcentro {
@@ -180,19 +214,20 @@ ul{
     min-height: 130px;
 }
 .boton_destaca{ 
-	background-color: #f0134d;
+	background-color: #a9fffd;
     width: 50%;
     padding: 10px 0px;
     border: 1px solid;
-    margin: 3em auto 2em auto;
 }
 .boton_destaca a{ 
-    color: white;
+    color: aliceblue;
     text-decoration: none;
 }
-.img-noticia-0 {
-    height: auto;
-    width: auto;
+.imgcent {
+    height: 150px;
+    width: 150px;
+    margin: 0px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 .listado {
@@ -206,7 +241,7 @@ ul{
 }
 
 .boton2:hover {
-    color: yellow;
+    border: 0px solid;
 }
 
 /* footer */
